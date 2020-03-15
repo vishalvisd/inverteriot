@@ -1,7 +1,5 @@
 import axios from 'axios';
 import _ from 'lodash';
-import config from 'config';
-
 
 const getErrors = (res)=>{
     const errors = [];
@@ -18,7 +16,10 @@ const getErrors = (res)=>{
 };
 
 const setInstruction = (ins) => {
-    return axios.get(`${config.get('app.backendConfig.host')}setinstruction?ins=${ins}`, {
+    //inverteriot_backend/
+    //http://localhost:5000/setinstruction/
+    const backendHost = "inverteriot_backend/";
+    return axios.get(`${backendHost}?ins=${ins}`, {
         crossdomain: true
     })
         .then(function (response) {
