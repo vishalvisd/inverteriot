@@ -18,7 +18,7 @@ const getErrors = (res)=>{
 const setInstruction = (ins) => {
     //inverteriot_backend/
     //localhost:5000/setinstruction/
-    const backendHost = "http://34.93.40.47:5000/setinstruction";
+    const backendHost = "34.93.40.47:5000/setinstruction";
     return axios.get(`http://${backendHost}?ins=${ins}`, {
         crossdomain: true
     })
