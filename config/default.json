@@ -1,0 +1,10 @@
+{
+  "app": {
+    "serverConfig": {
+      "port": 3000
+    },
+    "backendConfig": {
+      "host": "http://localhost:5000/"
+    }
+  }
+}

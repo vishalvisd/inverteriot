@@ -1,0 +1,10 @@
+{
+  "app": {
+    "serverConfig": {
+      "port": 3000
+    },
+    "backendConfig": {
+      "host": "inverteriotb/"
+    }
+  }
+}
